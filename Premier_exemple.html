@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Premier exemple</title>
+
+    <style>
+        body{
+            font-family: Tahoma;
+        }
+        img{
+            border-radius: 10px;
+        }
+        article{
+            border: solid 1px grey;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        article header{
+            background-color: azure;
+            color: black;
+            font-family: Helvetica, sans-serif; 
+            font-size: 14px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: wavy;
+        }
+        article div{
+            font-family: Verdana; 
+            font-size: 12px;
+        }
+        article footer{
+            background-color: rgb(20, 70, 20);
+            color: white;
+        }
+        a{
+            color: grey;
+            background-color: white;
+        }
+        a:hover{
+            color: black;
+            background-color: aliceblue;
+        }
+        header nav span{
+            text-align: center;
+            width: 140px;
+            display: inline-block;
+            background-color: blue;
+        }
+        header nav a{
+            font-variant: small-caps;
+            color: white;
+            background-color: blue;
+        }
+        a:hover{
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Page d'accueil</h1>
+        <p>
+            <a href="news.html">News</a> -
+            <a href="blog.html">Blog</a> -
+            <a href="forums.html">Forums</a>
+        </p>
+        <p>Last Modified: 2023-09-20</p>
+
+        <nav>
+            <span><a href="articles.html">Les articles</a></span>
+            <span><a href="today.html">Actualités</a></span>
+            <span><a href="cv.html">Mon cv</a></span>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Section 1</h1>
+        <h2> Première sous section</h2>
+        <p>Il fait beau.</p>
+        Pas si beau que ça.
+
+        <h2>Deuxième sous section</h2>
+        <p> La plante verte.</p>
+    </section>
+
+    <section>
+        <a href="https://www.google.fr"> GOOGLE </a><br>
+        <a href="mailto:manon@eberranger.com">manon@deberranger.com</a><br>
+    </section>
+    
+    <section>
+        <strong>Gros!</strong>
+        
+        <blockquote>Indenté</blockquote>
+
+        <div style="background-color: red;">
+            Bla
+        </div>
+
+        <span style="background-color: red;">
+            Bla
+        </span>
+    </section>
+
+    <section>
+        <ul> 
+            <li> Bonjour </li>
+            <li> Coucou Salut </li>
+            <li> Salutations </li>
+        </ul>
+
+        <ol> 
+            <li> Ce numéro </li>
+            <li> est fou </li>
+            <li> compléètement </li> 
+        </ol>
+    </section>
+    
+    <section>
+        <img src="images/IMG_8596.jpeg" title="Blabla" alt="Je présente un stylo" style="width: 200px"/>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>France</th>
+                    <th>Paris</th>
+                    <th>FR</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>France</td>
+                    <td>Paris</td>
+                    <td>FR</td>
+                </tr>
+                <tr>
+                    <td>Italie</td>
+                    <td>Rome</td>
+                    <td>IT</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    
+    <section>
+        <form action="?formulaire" method="POST" > 
+            <p>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrer votre nom"/>
+            </p>
+            
+            <p>
+                <label>Mot de passe</label>
+                <input type="password" name="motdepasse"/>
+            </p>
+            
+            <p>
+                <label>Kem</label>
+                <input type="radio" name="choix" value="Homme"/>
+                <label>Meuf</label>
+                <input type="radio" name="choix" value="Femme"/>
+                <label>Zarb...</label>
+                <input type="radio" name="choix" value="Autre"/><br/>
+            </p>
+            
+            <div>
+                <label>Choix 1 (100€)</label>
+                <input type="checkbox" name="option1" value="Option 1"/><br/>
+                <label>Choix 2 (1500€)</label>
+                <input type="checkbox" name="option2" value="Option 2"/><br/>
+                <label>Choix 3 (750€)</label>
+                <input type="checkbox" name="option3" value="Option 3"/><br/>
+            </div>
+            <p>
+                <input type="submit" value="Valider le formulaire"/>
+            </p>
+        </form>
+    </section>
+
+    <section>
+        <div>
+            <article>
+                <header>
+                    <h1>Mon 1er article</h1>
+                </header>
+                <div>
+                    <p>Ceci est le contenue de mon 1<sup>er</sup>article.</p>
+                    Bla bla
+                </div>
+                <footer>
+                    <p>Posté le Jeudi.</p>
+                    <p><a href="?edit&article=1">Edit</a> | <a href="?delete&article=1">Delete</a> | <a href="?Rename&article=1">Rename</a></p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h1>Mon 2ème article</h1>
+                </header>
+                <div>
+                    <p>Contenu de mon 2<sup>ème</sup> article</p>
+                    Bla bla
+                </div>
+                <footer>
+                    <p>Posté le <time pubdate="" datetime="2023-09-21T12:16-00:00">Vendredi</time>.</p>
+                    <p><a href="?edit&article=2">Edit</a> | <a href="?delete&article=2">Delete</a> | <a href="?Rename&article=2">Rename</a></p>
+                </footer>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2023 Manon de Berranger</p>
+        <p>
+            <a href="information.html">Informations</a> -
+            <a href="cgv.html">CGV</a> -
+            <a href="prix.html">Prix</a>
+        </p>
+    </footer>
+</body>
+</html>
